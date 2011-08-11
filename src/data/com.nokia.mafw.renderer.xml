@@ -1,0 +1,78 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="com.nokia.mafw.renderer">
+    <signal name="state_changed">
+      <arg name="state" type="i" direction="out"/>
+    </signal>
+    <signal name="media_changed">
+      <arg name="index" type="i" direction="out"/>
+      <arg name="objectId" type="s" direction="out"/>
+    </signal>
+    <signal name="playback_completed">
+    </signal>
+    <signal name="playlist_changed">
+      <arg name="playlistId" type="s" direction="out"/>
+    </signal>
+    <signal name="metadata_changed">
+      <arg name="key" type="s" direction="out"/>
+      <arg name="values" type="av" direction="out"/>
+    </signal>
+    <signal name="buffering_info">
+      <arg name="status" type="d" direction="out"/>
+    </signal>
+    <signal name="scanning_info">
+      <arg name="status" type="d" direction="out"/>
+    </signal>
+    <signal name="error">
+      <arg name="code" type="i" direction="out"/>
+      <arg name="message" type="s" direction="out"/>
+    </signal>
+    <method name="play">
+    </method>
+    <method name="play_uri">
+      <arg name="url" type="s" direction="in"/>
+      <arg name="startPos" type="u" direction="in"/>
+    </method>
+    <method name="play_uri">
+      <arg name="url" type="s" direction="in"/>
+    </method>
+    <method name="play_uri_content_type">
+      <arg name="url" type="s" direction="in"/>
+      <arg name="contentType" type="s" direction="in"/>
+    </method>
+    <method name="stop">
+    </method>
+    <method name="pause">
+    </method>
+    <method name="pause_at">
+      <arg name="position" type="u" direction="in"/>
+    </method>
+    <method name="resume">
+    </method>
+    <method name="set_position">
+      <arg name="seconds" type="i" direction="in"/>
+      <arg name="mode" type="i" direction="in"/>
+    </method>
+    <method name="set_position">
+      <arg name="seconds" type="i" direction="in"/>
+    </method>
+    <method name="get_position">
+    </method>
+    <method name="get_status">
+    </method>
+    <method name="get_current_media_info">
+      <arg name="metadataKey" type="s" direction="in"/>
+    </method>
+    <method name="assign_playlist">
+      <arg name="id" type="s" direction="in"/>
+    </method>
+    <method name="next">
+    </method>
+    <method name="previous">
+    </method>
+    <method name="goto_index">
+      <arg name="index" type="u" direction="in"/>
+    </method>
+  </interface>
+</node>

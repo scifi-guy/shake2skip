@@ -1,0 +1,7 @@
+<aegis>
+	<request>
+		   <credential name="UID::user" />
+		   <credential name="GID::users" />
+		  <for path="/opt/shake2skip/bin/shake2skip.sh" />
+	</request>
+</aegis>

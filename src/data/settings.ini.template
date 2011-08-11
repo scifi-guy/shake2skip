@@ -1,0 +1,12 @@
+########################################################################################################################
+###                                        Rename to settings.ini to use
+########################################################################################################################
+[General]
+# Enable accelerometer debug logging to identify incorrect triggers
+Debug=false
+# Path for debug log file. Make sure user has permissions to edit this file.
+LogFilePath=/home/user/.shake2skip/shake2skip-data.log
+# Threshold to recognize a horizontal shake. Higher number means less accidental triggers but you have to shake wider/harder.
+ShakeThreshold=7.000000
+# When you shake the handset continuously, multiple songs could be skipped. To avoid this, set up a time gap (in seconds) between "triggers" to skip songs
+TimeGap=2.000000

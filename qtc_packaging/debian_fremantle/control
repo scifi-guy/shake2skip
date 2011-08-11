@@ -1,0 +1,15 @@
+Source: shake2skip
+Section: user/hidden
+Priority: optional
+Maintainer: Sudheer <sudheer@unknown>
+Build-Depends: debhelper (>= 5), libqt4-dev
+Standards-Version: 3.7.3
+Homepage: <insert the upstream URL, if relevant>
+
+Package: shake2skip
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Shake 2 Skip the current song in audio player
+ <insert long description, indented with spaces>
+XB-Maemo-Display-Name: Shake2Skip
+XB-Maemo-Icon-26: 

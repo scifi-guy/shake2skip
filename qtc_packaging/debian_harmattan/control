@@ -1,0 +1,15 @@
+Source: shake2skip
+Section: user/utilities
+Priority: optional
+Maintainer: Sudheer K. <scifi1947 at gmail.com>
+Build-Depends: debhelper (>= 5), libqt4-dev
+Standards-Version: 3.7.3
+Homepage: https://projects.developer.nokia.com/shake2skip
+
+Package: shake2skip
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Shake 2 Skip the current song in audio player
+XSBC-Bugtracker: https://projects.developer.nokia.com/shake2skip/query
+XSBC-Maemo-Display-Name: Shake2Skip
+XB-Maemo-Icon-26: 
